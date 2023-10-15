@@ -22,9 +22,8 @@ img{
 }
 .container {
     max-width: 1158px;
-    padding-left: 15px;
-    padding-right: 15px;
     margin: 0 auto;
+    padding: 0 15px 0 15px;
     justify-content: center;
 }
 /* header */
@@ -34,8 +33,6 @@ img{
 }
 .header-page .container{
  display: flex;
- padding-top: 24px;
- padding-bottom: 24px;
  justify-content: space-between;
 }
 .logo-design{
@@ -54,11 +51,15 @@ img{
 }
 .nav-page{
     display: flex;
+    align-items: center;
     
 }
 .navigation{
     display: flex;
     gap: 40px;
+}
+.navigation-list{
+    padding: 24px 0;
 }
 .navigation-item{
     font-size: 16px;
@@ -76,6 +77,7 @@ img{
 .contact-menu{
     display: flex;
     gap: 40px;
+    padding: 24px 0;
 }
 .contact-item{
     font-size: 16px;
@@ -90,12 +92,10 @@ img{
 }
 /* hero section */
 
-.hero-zone .container{
-    padding-top: 188px;
-    padding-bottom: 188px;
-}
 .hero-zone{
     background-color: #2E2F42;
+    padding-top: 188px;
+    padding-bottom: 188px;
 }
 .hero-text{
     font-size: 56px;
@@ -120,7 +120,10 @@ img{
     box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
     margin: 0 auto;
     margin-top: 48px;
-    display: flex;
+    display: block;
+    min-width: 169px;
+    height: 56px;
+    border: none;
 }
 .button-design:hover,
 .button-design:focus{
@@ -158,7 +161,7 @@ img{
     gap: 24px;
 }
 .company-blocks{
-    width: calc((100%-(3*24px))/4);
+    width: calc((100% - 3*24px)/4);
 }
 .company-blocks-name{
     font-weight: 500;
@@ -184,13 +187,15 @@ img{
     justify-content: center;
 }
 .our-team-cell{
-    padding-bottom: 32px;
     width: calc((100%-(24px*3))/4);
     border-radius: 0px 0px 4px 4px;
     background-color: #FFF;
     box-shadow: 0px 2px 1px 0px rgba(46, 47, 66, 0.08), 0px 1px 1px 0px rgba(46, 47, 66, 0.16), 0px 1px 6px 0px rgba(46, 47, 66, 0.08);
 }
-
+.team-card{
+    padding-top: 32px;
+    padding-bottom: 32px;
+}
 .our-team-main-text{
     color: #2E2F42;
     text-align: center;
@@ -199,7 +204,7 @@ img{
     line-height: 1.11;
     letter-spacing: 0.72px;
     text-transform: capitalize;
-    padding-bottom: 72px;
+    margin-bottom: 72px;
 }
 .our-team-name{
     font-weight: 500;
@@ -208,8 +213,7 @@ img{
     letter-spacing: 0.4px;
     color: #2E2F42;
     text-align: center;
-    padding-top: 32px;
-    padding-bottom: 8px;
+    margin-bottom: 8px;
 }
 .our-team-blocks-profession-name{
     font-size: 16px;    
@@ -219,6 +223,16 @@ img{
     text-align: center;
 }
 /* portfolio block */
+.portfolio-main-text {
+    color: #2E2F42;
+    text-align: center;
+    font-size: 36px;
+    font-weight: 700;
+    line-height: 1.11;
+    letter-spacing: 0.72px;
+    text-transform: capitalize;
+    margin-bottom: 72px;
+}
 .portfolio-list{
     display: flex;
     flex-wrap: wrap;
@@ -230,19 +244,14 @@ img{
 }
 .portfolio-list-item{
     width: calc((100%-(24px*2))/3);
-    padding-bottom: 32px;
     border-bottom: 1px solid #E7E9FC;
     background-color: #FFF;
 }
-.portfolio-main-text{
-color: #2E2F42;
-text-align: center;
-font-size: 36px;
-font-weight: 700;
-line-height: 1.11;
-letter-spacing: 0.72px;
-text-transform: capitalize;
-padding-bottom: 72px;
+
+.portfolio-card{
+    padding: 32px 16px;
+    border: 1px solid #e7e9fc;
+    border-top: none;
 }
 .portfolio-name{
     font-weight: 500;
@@ -251,9 +260,7 @@ padding-bottom: 72px;
     line-height: 1.2;
     letter-spacing: 0.4px;
     color: #2E2F42;
-    padding-left: 16px;
-    padding-top: 32px;
-    padding-bottom: 8px;
+    margin-bottom: 8px;
 }
 .portfolio-descrip{
     font-size: 16px;
@@ -265,14 +272,11 @@ padding-bottom: 72px;
 
 /* footer */
 .footer-box{
-    background-color: #2E2F42;}
-.footer-box .container{
+    background-color: #2E2F42;
     padding-top: 100px;
     padding-bottom: 100px;
 }
-.logo-block{
 
-}
 .logo-design-footer {
     font-family: 'Raleway', sans-serif;
     font-weight: 700;
@@ -281,6 +285,8 @@ padding-bottom: 72px;
     letter-spacing: 0.54px;
     text-transform: uppercase;
     color: #4D5AE5;
+    display: inline-block;
+    margin-bottom: 16px;
 }
 .logo-studio-footer{
     color:#F4F4FD;
